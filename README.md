@@ -9,18 +9,22 @@ Code from [setImmediate(callback[, ...args])](https://nodejs.org/api/timers.html
 Require `node >= v8.0.0`
 
 npm install
+
 npm run build
+
 node index-babel
 
 ## Error and Solution
 
 - ReferenceError: regeneratorRuntime is not defined
 
-[ES6 Ğ´·¨±¨´íregeneratorRuntime is not defined](https://segmentfault.com/q/1010000006801859)
+[ES6 å†™æ³•æŠ¥é”™regeneratorRuntime is not defined](https://segmentfault.com/q/1010000006801859)
+
 [Polyfill](http://babeljs.io/docs/usage/polyfill/)
+
 [Runtime transform](http://babeljs.io/docs/plugins/transform-runtime/)
 
-Ê¹ÓÃ`babel-polyfill`Ê±ĞèÒª½« `require("babel-polyfill");` ·Åµ½×ªÂëºóµÄ´úÂëµÄÍ·²¿£¨`'use strict';`ÏÂÃæ£©¡£
+ä½¿ç”¨`babel-polyfill`æ—¶éœ€è¦å°† `require("babel-polyfill");` æ”¾åˆ°è½¬ç åçš„ä»£ç çš„å¤´éƒ¨ï¼ˆ`'use strict';`ä¸‹é¢ï¼‰ã€‚
 
 - TypeError: util.promisify is not a function
 
